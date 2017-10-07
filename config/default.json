@@ -1,6 +1,6 @@
 {
     "appSecret": "EAAKRqQ0ZC3toBAB3uEGVeFFukG1vZAhnV1EmourBv0gvlj5byCRgABmBntiM6HGqqXb4ZAFDZBbjrZCD15rqSbsGLRIMZAIAkK0D2GxDc4TIsvg7jAtib4WDu10oZAbr5BsjjCMK1IWzJ2tnHTFfl2r7F6Y1oz7OPyz2RhPLrMqFwZDZD",
-    "pageAccessToken": "",
-    "validationToken": "server.herokuapp.com/webhook",
-    "serverURL": ""
+    "pageAccessToken": "178125299411124",
+    "validationToken": "trying_to_make_a_bot_work",
+    "serverURL": "https://bikepal-server.herokuapp.com"
 }
