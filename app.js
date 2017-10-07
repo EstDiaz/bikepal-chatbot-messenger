@@ -83,7 +83,9 @@ app.get('/webhook', function(req, res) {
 app.post('/webhook', function (req, res) {
   var data = req.body;
   console.log('>>> MESSAGE RECEIVED');
-  console.log(data);
+  console.log(data.entry);
+  console.log('-----');
+  console.log(data.entry[0].changes);
 
   // Make sure this is a page subscription
   if (data.object == 'page') {
