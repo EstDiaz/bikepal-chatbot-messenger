@@ -84,8 +84,6 @@ app.post('/webhook', function (req, res) {
   var data = req.body;
   console.log('>>> MESSAGE RECEIVED');
   console.log(data.entry);
-  console.log('-----');
-  console.log(data.entry[0].changes);
 
   // Make sure this is a page subscription
   if (data.object == 'page') {
@@ -312,7 +310,8 @@ function receivedMessage(event) {
         break;
 
       default:
-        sendTextMessage(senderID, messageText);
+        sendTextMessage(senderID, 'Hola!');
+        sendTextMessage(senderID, '¿Puedo ayudarte?');
     }
   } else if (messageAttachments) {
     sendTextMessage(senderID, "Message with attachment received");
@@ -699,22 +698,22 @@ function sendQuickReply(recipientId) {
       id: recipientId
     },
     message: {
-      text: "What's your favorite movie genre?",
+      text: "¿De qué ciudad quieres saber?",
       quick_replies: [
         {
-          "content_type":"text",
-          "title":"Action",
-          "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_ACTION"
+          "content_type":"location",
+          "title":"Cerca de mí",
+          "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_LOCATION"
         },
         {
           "content_type":"text",
-          "title":"Comedy",
-          "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_COMEDY"
+          "title":"Madrid",
+          "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_MADRID"
         },
         {
           "content_type":"text",
-          "title":"Drama",
-          "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_DRAMA"
+          "title":"Sevilla",
+          "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_SEVILLA"
         }
       ]
     }
