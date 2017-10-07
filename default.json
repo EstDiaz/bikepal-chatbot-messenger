@@ -1,6 +1,6 @@
 {
-    "appSecret": "",
+    "appSecret": "EAAKRqQ0ZC3toBAB3uEGVeFFukG1vZAhnV1EmourBv0gvlj5byCRgABmBntiM6HGqqXb4ZAFDZBbjrZCD15rqSbsGLRIMZAIAkK0D2GxDc4TIsvg7jAtib4WDu10oZAbr5BsjjCMK1IWzJ2tnHTFfl2r7F6Y1oz7OPyz2RhPLrMqFwZDZD",
     "pageAccessToken": "",
-    "validationToken": "",
+    "validationToken": "server.herokuapp.com/webhook",
     "serverURL": ""
 }
